@@ -1,0 +1,24 @@
+a {
+	color: cyan;
+}
+body {
+	color: white;
+}
+span {
+	color: purple;
+}
+.wrapper {
+	padding: 10px; width: 970px; background-color: navy;
+}
+.navigation {
+	padding: 10px; border-radius: 10px; width: 180px; float: left; background-color: darkcyan;
+}
+.header {
+	margin: 0px 0px 15px; padding: 1px 0px 1px 10px; border-radius: 10px; color: white; background-color: red;
+}
+.footer {
+	margin: 10px 0px 0px; padding: 10px; border-radius: 10px; background-color: gray;
+}
+.main_content {
+	margin: 0px 0px 0px 215px; padding: 10px; border-radius: 10px; width: 730px; background-color: black;
+}
