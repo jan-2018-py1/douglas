@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>RandomChance</title>
+    <script>
+    var payout = 0;
+    var token = 100;
+    
+
+    while (token > 0)
+    {
+        spin = (Math.floor(Math.random()*100));
+        spin2 = (Math.floor(Math.random()*100));
+
+        if (spin != spin2)
+        {
+            console.log("You didn't match " + spin +"--"+ spin2);
+            token = (token-1);
+            console.log("You lose you have " + token + " tokens left");
+        }
+
+        else 
+    {
+        payout = (Math.floor(Math.random()*50) +50);
+        token = token + payout;
+    console.log("you spun "+ spin +"--"+ spin2);
+    console.log("you won! " + payout + " tokens");
+    console.log("you now have " + token + " tokens");
+    }
+    }
+    
+    </script>
+</head>
+<body>
+    
+</body>
+</html>>
+</html>
