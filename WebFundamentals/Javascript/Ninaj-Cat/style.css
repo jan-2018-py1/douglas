@@ -1,0 +1,14 @@
+body{
+    margin:0;
+    padding:0;
+    width:125px;
+}
+img{
+    margin-bottom:-4px;
+    display:inline-block;
+    vertical-align: left;
+    height:50px;
+    width:100px;
+    padding-left:10px;
+    padding-right:10px;
+}}

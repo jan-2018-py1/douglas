@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Missing Sox</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>>
+    <script>
+    $(document).ready(function(){
+        $("img").attr("width","175px");
+        $("img").attr("height","175px");
+    
+        $("img").click(function(){
+        $(this).addClass("hidden");
+        });
+        $("#restore").click(function(){
+            $("img").removeClass("hidden");
+        });
+    });
+    </script>
+</head>
+<body>
+    <div>
+        <img  src="redsox.jpg"/>
+        <img  src="redsox.jpg"/>
+        <img  src="redsox.jpg"/>
+        <img  src="redsox.jpg"/>
+        <img  src="redsox.jpg"/>
+        <img  src="redsox.jpg"/>
+        <img  src="redsox.jpg"/>
+        <img  src="redsox.jpg"/>
+    </div>
+    <button id="restore">Restore</button>
+</body>
+</html>

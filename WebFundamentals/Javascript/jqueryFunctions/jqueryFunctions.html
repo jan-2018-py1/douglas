@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>jqueryFunctions</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>>
+    <script>
+    $(document).ready(function(){
+        $('#button1').click(function(){
+            $('#myParagraph').text('see how I .text() works as a setter!');
+        });
+            $('#myHeading').hide();
+            $('#button2').click(function(){
+            $('#myHeading').show( "slow",function(){
+                });
+            });
+            $("#toggle").toggle(function(){
+                alert("Red Sox are great!");
+                });
+    
+            $("#sox").hide();
+            $("#button3").click(function(){
+            $("#sox").fadeIn("100","swing",function() { 
+                });
+            });
+            
+            $("#sox").hide();
+            $("#button4").click(function(){
+            $("#sox").fadeOut("100","swing",function() { 
+                });
+            });
+           
+            $("#h21").hide();
+            $("#button5").click(function(){
+                $("#h21").slideToggle("slow", function(){
+                });
+            });
+            $("#button6").click(function(){
+                $("#h22").addClass("blue");
+            });
+            $("#button7").click(function(){
+                $("h2").before("<h3>This stuff is neat</h3>");
+            });
+            $("#button8").click(function(){
+                $("#button8").after("<br><br><h1>Hello World!</h1>");
+            });
+            $("#button9").click(function(){
+                $('#button6').append("<br><b>Make it Blue</b>");
+            });
+            $("h2").click(function(){
+                $("h2").html("<b>Goodbye Cruel World!</b>");
+            });
+            $("#button10").click(function(){
+                $("#sox").attr("width","200px");
+                $("#sox").attr("height","200px");
+            });
+            $("#button11").click(function(){
+                $("input:text").val("Clark Griswold");
+            });
+            $("#button12").click(function(){
+                $("p").text("Mad Max");
+            });
+            $("#btn1").click(function(){
+             $("div").data("greeting", "Hello World");
+            });
+            $("#btn2").click(function(){
+             alert($("div").data("greeting"));
+            });
+    });
+</script>
+<style>
+    .red{
+        font-size:150%;
+        color:red;
+    }
+    .blue{
+        font-size:250%;
+        color:blue;
+    }
+</style>
+</head>
+<body>
+        
+        <h1 id="myHeading">This is my heading</h1>
+        <p id='myParagraph'> This is my paragraph! </p>
+        <button id = "button1"> Click me to change the paragraph! </button> <button id = "button2">Click me to see what's here.</button><br>
+        <div id = "toggle">
+        </div>
+        <br>
+        <button id = "button3">Fade In</button>         
+        <br>
+        <img id = "sox" src="redsox.jpg" alt="redsox" height="100px" width="100px">
+        <br>
+        <h2 id = "h21">This</h2>
+        <h2 id = "h22" class="red">is</h2>
+        <h2 id = "h23">a test</h2>
+        <button id = "button5">slide toggle</button>       <button id = "button6">Change Class</button>
+       <br>
+       <br>
+       <button id = "button7">Before</button>       <button id = "button8">After</button>
+       <br>
+       <br>
+       <button id= "button9">Append</button> <button id="button10">Change size</button>
+       <br>
+       <br>
+       <button id= "button4">Fade Out</button> <button id="button11">Set Field Value</button>  <button id="button12">Change Labels</button>
+       <p id="name">Name:<input type="text" name="user"></p>
+       <button id="btn1">Attach data to div element</button><br>       <button id="btn2">Get data attached to div element</button>
+</body>
+
+
+</html>  
+   
+
