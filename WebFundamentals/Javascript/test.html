@@ -1,23 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>practice</title>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>>
-    <script>
-    $(document).ready(function(){
-        $('button').click(function(){
-            $('#myParagraph').text('see how I .text() works as a setter!');
-        })
-    });
-</script>
+<script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
 </head>
 <body>
-        <p id='myParagraph'> This is my paragraph! </p>
-        <button> Click me to change the paragraph! </button>
+  <input type="text" id="one"><input type="text" id="two"><input type="text" id="three"><button onclick="addRow()">ADD</button>
+<table id="inventory">
+  <thead>
+    <tr>
+      <th>Item Name</th>
+      <th>Item Number</th>
+      <th>Item Color</th>
+    </tr>
+  </thead>
+  <tbody id="screen">
+  </tbody>
+</table>
 </body>
-
-
+  <script>
+    $( document ).ready(function(){
+      $('#screen').html(localStorage.getItem("data"));
+      
+    });
+    function addRow(){
+      var str = '<tr class = "boxType"><td>'+$('#one').val()+'</td>\
+  <td>'+$('#two').val()+'</td>\
+  <td>'+$('#three').val()+'</td>\
+</tr>'
+      $('#screen').append(str);
+      localStorage.setItem("data", $('#screen').html());
+    }
+  </script>
 </html>

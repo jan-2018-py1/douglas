@@ -1,0 +1,39 @@
+table {
+    font-family: arial, sans-serif;
+    border: 5px solid black;
+    width: 100%;
+}
+
+td, th {
+    border-collapse: collapse;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+input{
+    display:inline-block;
+    text-align: left;
+}
+button{
+    margin-left:125px;
+}
+div{
+    background-color:white;
+    width:310px;
+    margin-top:200px;
+    margin-left:250px;
+}
+label{
+    display:inline-block;
+    text-align:left;
+    width:140px;
+}
+
+h1{
+    width:310px;
+    border-bottom: 2px solid black;
+}}};
+}
